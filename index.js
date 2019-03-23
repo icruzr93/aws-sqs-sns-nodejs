@@ -29,7 +29,7 @@ function createMessageSNS() {
     var message = 'This is a message from Amazon SQS';
     sns.publish({
         Message: message,
-        TargetArn:'ARN_QUEUE'
+        TargetArn:'SNS_ARN'
     }, function(err, data) {
         if (err) {
             console.log(err.stack);
